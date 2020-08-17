@@ -1,0 +1,132 @@
+html {
+  font-size: 16px;
+}
+
+#navbar {
+  display: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+#home {
+   font-size: 15px;
+   width: 100%;
+}
+
+#home h1 {
+  font-size: 1.8rem;
+}
+
+#home h1,
+#home p {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: 5px;
+}
+
+#about h2 {
+  font-size: 4rem;
+}
+
+#about h6 {
+  font-size: 1.5rem;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#products h2 {
+  font-size: 3rem;
+  padding-top: 20px;
+}
+
+.mySlides {
+  height: 300px;
+  width: 100%;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+}
+
+/*Reviews section*/
+
+#reviews h2 {
+  font-size: 2.2rem;
+  padding: 5px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+}
+
+.image-container {
+  width: 80px;
+  height: 80px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 12px;
+  padding: 0px 5px;
+}
+
+/*I've set the parent container to relative and the arrows to absolute but it seems something is still wrong with my code, I can't seem to be able to place the arrows ontop of the image in mobile view*/
+.customer-reviews {
+  position: relative;
+}
+
+.customer-reviews i{
+  position: absolute;
+  font-size: 2rem;
+  margin: auto;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact-form p {
+  font-size: 10px;
+}
+
+#contact .contact-form {
+  width: 300px;
+  margin: auto;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.4rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.4rem;
+}
+
+input[type=submit]{
+  font-size: 12px;
+}
+
+#main-footer p {
+  font-size: 10px;
+}

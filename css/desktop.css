@@ -1,0 +1,334 @@
+/*General Styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #242c4c;
+  scroll-behavior: smooth;
+}
+/*links*/
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 5px solid #242c4c;
+}
+/*navbar container*/
+.container {
+ display: flex;
+ justify-content: space-around;
+ padding: 0 1rem;
+ align-items: center;
+}
+/*logo and company name*/
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+ul li a {
+  padding: 0.5rem;
+}
+
+.burger {
+  display: none;
+}
+
+ul li a:hover {
+  background: #F1E5E0;
+  border-radius: 10px;
+  transition: all .5s ease 0s;
+}
+
+/*hero section*/
+#home {
+  background: url('../img/header-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#home h1 {
+  font-size: 5rem;
+  font-weight: 1200;
+}
+
+#home h1,
+#home p {
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+
+/*About section*/
+.about-heading {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+#about h2 {
+  margin-top: 6rem;
+  font-size: 7rem;
+  opacity: .3;
+}
+
+#about h6 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#about p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/*Products section*/
+#products {
+  background: #F1E5E0;
+}
+
+#products h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/*Underline of headings*/
+hr {
+  height: .25rem;
+  width: 25%;    
+  margin: auto;
+  background: tomato;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+/*Image Slider*/
+.mySlides {
+  display: none;
+}
+
+.mySlides {
+  width: 100%;
+  height: 600px; 
+  margin: auto;
+ }
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+ }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The bullets on image*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Reviews Section*/
+
+#reviews h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 500px;
+  height: 400px; 
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 15px #888888;
+  border-radius: 20px;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 0px 0px 2px tomato;
+}
+
+.customer-reviews {
+  display: flex;
+}
+
+.customer-reviews i {
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+  opacity: .3;
+}
+
+.customer-reviews i:hover {
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 5px auto;
+  color: #4d5b94;
+}
+
+/*Contact Section*/
+
+#contact {
+  background: #F1E5E0;
+}
+
+#contact h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form p {
+  text-align: center;
+}
+
+#contact .contact-form {
+  width: 800px;
+  margin: auto;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+input[type=submit]{
+  background: tomato;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/*Footer Section*/
+
+#main-footer {
+  background: #242c4c;
+  color: #fff;
+}
+
+#main-footer p {
+  text-align: center;
+  padding: 20px;
+}
