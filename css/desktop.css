@@ -17,20 +17,18 @@ a {
   text-decoration: none;
 }
 
+/*navbar container*/
 #navbar {
   background: #fff;
-  position: sticky;
-  top: 0;
+  height: 8vh;
   z-index: 10;
   border-bottom: 5px solid #242c4c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky; 
 }
-/*navbar container*/
-.container {
- display: flex;
- justify-content: space-around;
- padding: 0 1rem;
- align-items: center;
-}
+
 /*logo and company name*/
 .brand {
   display: flex;
@@ -39,27 +37,36 @@ a {
 
 .logo {
   width: 70px;
-  height: 70px;
+  height: 7.5vh;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+ul li {
   list-style: none;
-}
-
-ul li a {
-  padding: 0.5rem;
-}
-
-.burger {
-  display: none;
+  margin: 0px 10px;
 }
 
 ul li a:hover {
   background: #F1E5E0;
   border-radius: 10px;
+  padding: 10px;
   transition: all .5s ease 0s;
+}
+
+/*hamburger menu*/
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #242c4c;
+  margin: 3px;
 }
 
 /*hero section*/
@@ -69,16 +76,17 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2rem;
 }
 
 #home h1 {
   font-size: 5rem;
   font-weight: 1200;
+  margin-left: 2rem;
+  padding: 0.5rem;
 }
 
-#home h1,
 #home p {
+  font-size: 1.8rem;
   margin-left: 2rem;
   padding: 0.5rem;
 }
@@ -134,10 +142,6 @@ hr {
 }
 
 /*Image Slider*/
-.mySlides {
-  display: none;
-}
-
 .mySlides {
   width: 100%;
   height: 600px; 
@@ -244,21 +248,23 @@ hr {
   box-shadow: 5px 0px 0px 2px tomato;
 }
 
-.customer-reviews {
-  display: flex;
+
+.card {
+  position: relative;
 }
 
-.customer-reviews i {
-  font-size: 5rem;
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
-  margin: auto;
-  opacity: .3;
+#prevBtn {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 320%;
+  left: 20%;
 }
 
-.customer-reviews i:hover {
-  opacity: 1;
+#nxtBtn {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 320%;
+  right:20%;
 }
 
 .card h3 {
@@ -278,7 +284,8 @@ hr {
 /*Contact Section*/
 
 #contact {
-  background: #F1E5E0;
+  background: #242c4c;
+  color: #fff;
 }
 
 #contact h2 {
@@ -289,46 +296,39 @@ hr {
   margin-bottom: 2rem;
 }
 
-.contact-form p {
+#contact p {
   text-align: center;
+  font-size: 24px;
 }
 
-#contact .contact-form {
-  width: 800px;
+.social-icons {
+  display: flex;
   margin: auto;
+  justify-content: center;
+  font-size: 2rem;
 }
 
-#contact .contact-form .form-group {
-  margin: 0.75rem;
-}
-
-#contact .contact-form label {
-  display: block;
-}
-
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-}
-
-input[type=submit]{
-  background: tomato;
-  border: none;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  font-size: 1.2rem;
+.social-icons a {
+  margin: 10px 25px;
+  padding: 10px;
   color: #fff;
+}
+
+.social-icons a:hover {
+  box-shadow: 5px 5px 15px #888888;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 /*Footer Section*/
 
 #main-footer {
-  background: #242c4c;
+  background: #0a0d18;
   color: #fff;
 }
 
 #main-footer p {
   text-align: center;
   padding: 20px;
+  font-size: 18px;
 }

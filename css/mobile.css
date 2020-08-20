@@ -1,19 +1,48 @@
-html {
+*{
+  box-sizing: border-box;
+}
+
+body {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 #navbar {
-  display: none;
+  position: sticky;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 8vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #242c4c;
+  width: 50%;
+  align-items: center;
+ /* transform: translateX(100%);*/
+}
+
+
+.nav-links li a {
+  color: #fff;
+  font-weight: 1000;
+  margin-bottom: 50px;
+}
+
+.burger {
+  display: block;
 }
 
 .logo {
   width: 50px;
-  height: 50px;
+  height: 7.4vh;
 }
 
 #home {
    font-size: 15px;
-   width: 100%;
+   width: 100%; 
 }
 
 #home h1 {
@@ -25,6 +54,10 @@ html {
   margin-left: .5rem;
   margin-right: .5rem;
   padding: 5px;
+}
+
+#about {
+  width: 100%;
 }
 
 #about h2 {
@@ -62,14 +95,26 @@ html {
 /*Reviews section*/
 
 #reviews h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 5px;
 }
 
 .card {
-  width: 300px;
+  position: relative;
+}
+
+#prevBtn,
+#nxtBtn {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 270%;
+}
+
+.card {
+  width: 250px;
   height: 300px;
 }
+
 
 .image-container {
   width: 80px;
@@ -85,7 +130,6 @@ html {
   padding: 0px 5px;
 }
 
-/*I've set the parent container to relative and the arrows to absolute but it seems something is still wrong with my code, I can't seem to be able to place the arrows ontop of the image in mobile view*/
 .customer-reviews {
   position: relative;
 }
@@ -96,36 +140,31 @@ html {
   margin: auto;
 }
 
+/*Contact Section*/
+
 #contact h2 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
-#contact-form p {
-  font-size: 10px;
-}
-
-#contact .contact-form {
-  width: 300px;
-  margin: auto;
-}
-
-#contact .contact-form .form-group {
-  margin: 0.4rem;
-}
-
-#contact .contact-form label {
-  display: block;
-}
-
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 0.4rem;
-}
-
-input[type=submit]{
+#contact p {
   font-size: 12px;
 }
+
+.social-icons {
+  font-size: 1rem;
+}
+
+.social-icons a {
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.social-icons a:hover {
+  margin-right: 5px;
+}
+
+/*Footer Section*/
 
 #main-footer p {
   font-size: 10px;
