@@ -1,16 +1,9 @@
-*{
-  box-sizing: border-box;
-}
-
 body {
   font-size: 16px;
   overflow-x: hidden;
 }
 
-#navbar {
-  position: sticky;
-}
-
+/*Hamburger Menu*/
 .nav-links {
   position: absolute;
   right: 0;
@@ -20,46 +13,94 @@ body {
   flex-direction: column;
   background-color: #242c4c;
   width: 50%;
-  align-items: center;
- /* transform: translateX(100%);*/
+  justify-content: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in;
+}
+
+.nav-links li {
+  opacity: 0;
+  margin-top: 50px;
+  text-align: center;
 }
 
 
 .nav-links li a {
   color: #fff;
-  font-weight: 1000;
-  margin-bottom: 50px;
+}
+
+ul li a:hover {
+  margin-right: 20px;
+  background: #0a0d18;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all .5s ease 0s;
 }
 
 .burger {
   display: block;
+  cursor: pointer;
 }
 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #242c4c;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinksFade{
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,3.5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-3.5px);
+}
+
+/*Navbar*/
 .logo {
   width: 50px;
   height: 7.4vh;
 }
 
-#home {
-   font-size: 15px;
-   width: 100%; 
-}
-
+/*Home Section*/
 #home h1 {
-  font-size: 1.8rem;
-}
-
-#home h1,
-#home p {
+  font-size: 2.2rem;
   margin-left: .5rem;
   margin-right: .5rem;
   padding: 5px;
 }
 
-#about {
-  width: 100%;
+#home p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: 5px;
 }
 
+/*About Section*/
 #about h2 {
   font-size: 4rem;
 }
@@ -69,10 +110,11 @@ body {
 }
 
 #about p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
 }
 
+/*Products Section*/
 #products h2 {
   font-size: 3rem;
   padding-top: 20px;
@@ -93,21 +135,14 @@ body {
 }
 
 /*Reviews section*/
-
 #reviews h2 {
   font-size: 2rem;
   padding: 5px;
 }
 
-.card {
-  position: relative;
-}
-
 #prevBtn,
 #nxtBtn {
-  position: absolute;
   font-size: 1.5rem;
-  top: 270%;
 }
 
 .card {
@@ -126,18 +161,8 @@ body {
 }
 
 .card p {
-  font-size: 12px;
-  padding: 0px 5px;
-}
-
-.customer-reviews {
-  position: relative;
-}
-
-.customer-reviews i{
-  position: absolute;
-  font-size: 2rem;
-  margin: auto;
+  font-size: 15px;
+  padding: 5px;
 }
 
 /*Contact Section*/
@@ -148,7 +173,7 @@ body {
 }
 
 #contact p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .social-icons {
@@ -167,5 +192,5 @@ body {
 /*Footer Section*/
 
 #main-footer p {
-  font-size: 10px;
+  font-size: 13px;
 }

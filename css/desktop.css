@@ -5,9 +5,9 @@
   padding: 0;
 }
 
-html {
+body {
   background: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   color: #242c4c;
   scroll-behavior: smooth;
@@ -21,12 +21,13 @@ a {
 #navbar {
   background: #fff;
   height: 8vh;
+  width: 100%;
   z-index: 10;
   border-bottom: 5px solid #242c4c;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky; 
+  position: fixed; 
 }
 
 /*logo and company name*/
@@ -40,17 +41,17 @@ a {
   height: 7.5vh;
 }
 
-ul {
+.nav-links {
   display: flex;
   justify-content: space-around;
 }
 
-ul li {
+.nav-links li {
   list-style: none;
   margin: 0px 10px;
 }
 
-ul li a:hover {
+.nav-links li a:hover {
   background: #F1E5E0;
   border-radius: 10px;
   padding: 10px;
@@ -60,13 +61,6 @@ ul li a:hover {
 /*hamburger menu*/
 .burger {
   display: none;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #242c4c;
-  margin: 3px;
 }
 
 /*hero section*/
@@ -208,6 +202,10 @@ hr {
 
 /*Reviews Section*/
 
+#reviews {
+  position: relative;
+}
+
 #reviews h2 {
   font-size: 4rem;
   font-weight: 600;
@@ -221,12 +219,13 @@ hr {
   margin: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card {
   width: 500px;
   height: 400px; 
-  margin: 5px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,25 +245,21 @@ hr {
   height: 100%;
   border-radius: 50%;
   box-shadow: 5px 0px 0px 2px tomato;
-}
-
-
-.card {
-  position: relative;
+  margin-top: 10px;
 }
 
 #prevBtn {
   position: absolute;
-  font-size: 1.5rem;
-  top: 320%;
+  font-size: 3rem;
+  top: 50%;
   left: 20%;
 }
 
 #nxtBtn {
   position: absolute;
-  font-size: 1.5rem;
-  top: 320%;
-  right:20%;
+  font-size: 3rem;
+  top: 50%;
+  right: 20%;
 }
 
 .card h3 {
